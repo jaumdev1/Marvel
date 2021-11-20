@@ -1,0 +1,46 @@
+
+.heroInfo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerHero{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.description{
+
+}
+.imageHero{
+    
+    width: 300px;
+    height: 300px;
+}
+.likeButton{
+    z-index: 100;
+    cursor:pointer;
+    width: 100%;
+    background-color: #ff2323;
+    color:#fff;
+    border: none;
+    border-radius: 2px;
+    
+}
+.likeButton:hover{
+    
+    opacity: 0.5;
+    
+}
+
+.likeButton:active{
+    transition: all 0.5s;
+    transform: scale(0.9);
+}
