@@ -1,0 +1,76 @@
+.hero{
+    text-decoration: none;
+display:flex;
+width: 210px;
+height: 300px;
+padding:10px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+justify-self: center;
+ align-self: center;
+cursor: pointer;
+background-color: #1b1b1b;
+border: solid rgba(255, 43, 43, 0.1) 2px;
+border-radius: 3px;
+text-align: center;
+}
+.containerhero{
+    text-decoration: none;
+}
+.contentHero{
+    height: 255px;
+    
+   
+}
+.containerhero:hover{
+    transform: scale(0.98);
+}
+.containerhero:hover .image{
+   
+   filter:grayscale(1)
+}
+.image{
+    border-radius: 3px;
+    width: 200px;
+    height: 200px;
+    
+    
+}
+
+.hero{
+    font-size: 1rem;
+}
+.name{
+    color:#ff2323;
+   
+}
+.name:hover{
+    color:#fff;
+}
+.contentLike{
+  
+    
+    width: 100%;
+   
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+.buttonLike{
+    z-index: 100;
+    cursor:pointer;
+    width: 100%;
+    background-color: #ff2323;
+    color:#fff;
+    border: none;
+    border-radius: 2px;
+}
+.buttonLike:hover{
+    opacity: 0.5;
+ 
+}
+.buttonLike:active{
+    transition: all 0.5s;
+    transform: scale(0.9);
+}
