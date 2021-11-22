@@ -59,7 +59,7 @@ function HeroInfo():JSX.Element {
      alert('Você já tem esse herói em sua lista!');
      return;
    }else{
-   saveHeros.push({id:hero[0].id, name:hero[0].name, img: (hero[0].thumbnail.path +'.'+ hero[0].thumbnail.extension)})
+   saveHeros.push({id:hero[0].id, name:hero[0].name, img: (hero[0].thumbnail.path +'.'+ hero[0].thumbnail.extension )})
    localStorage.setItem('heros', JSON.stringify(saveHeros))
    alert('O heroi foi salvo!')
    }
