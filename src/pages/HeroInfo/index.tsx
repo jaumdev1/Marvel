@@ -58,6 +58,7 @@ function HeroInfo():JSX.Element {
      const response = await api.get(`characters/${id}?ts=${keyTimeStamp}&apikey=${keyPublica}&hash=${keyMd5}`)
      setHero(response.data.data.results)
      setSeries(response.data.data.results[0].series.items)
+     console.log(response.data.data.results[0].series.items)
      
 
     }
@@ -76,9 +77,9 @@ function HeroInfo():JSX.Element {
       const keyMd5 = 'd53442a0c3f85d6c21b9e5a9d1791c5d'
       const keyPublica = '64848faabd63b03da8406ef12859179f'
 
-      
-        const response = await api.get(`${series[0].resourceURI}?ts=${keyTimeStamp}&apikey=${keyPublica}&hash=${keyMd5}`)      
-
+        console.log(series[0])
+        const response = await api.get(`${(series[0].resourceURI).replace("http", "https")}?ts=${keyTimeStamp}&apikey=${keyPublica}&hash=${keyMd5}`)      
+        
         setSerie(response.data.data.results)
          
        
