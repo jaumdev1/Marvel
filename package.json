@@ -7,6 +7,9 @@
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
+   "engines": {
+    "node": "14.17.3"
+    },
    "dependencies": {
     "@types/react-router-dom": "5",
     "axios": "^0.24.0",
