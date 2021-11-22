@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "start": "vite --port 3000",
+    "start": "vite --port $PORT",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
