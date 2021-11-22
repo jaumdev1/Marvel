@@ -3,11 +3,20 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
+<<<<<<< HEAD
   "dependencies": {
    
+=======
+   "engines": {
+    "node": "14.17.3"
+    },
+   "dependencies": {
+    "@types/react-router-dom": "5",
+>>>>>>> 642749ce8358a238f6d54bd67b39e32e91707c55
     "axios": "^0.24.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
