@@ -2,12 +2,15 @@
   "name": "filmes",
   "version": "0.0.0",
   "scripts": {
-    "start": "vite",
     "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
-  "dependencies": {
+   "engines": {
+    "node": "14.17.3"
+    },
+   "dependencies": {
     "@types/react-router-dom": "5",
     "axios": "^0.24.0",
     "react": "^17.0.0",
