@@ -3,16 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "start": "vite",
+    "start": "yarn dev",
     "build": "tsc && vite build",
     "serve": "vite preview"
   },
-<<<<<<< HEAD
-  "engines": {
-=======
-
    "engines": {
->>>>>>> 7f88b2aa6ebce31c48d7711d847ba4165854c50e
+
     "node": "14.17.3"
     },
  
