@@ -37,14 +37,15 @@ type Serie={
 }
 
 
-function HeroInfo() {
+function HeroInfo():JSX.Element {
+
   const{ id } = useParams<ParamTypes>();
   const [hero, setHero] = useState<Hero[]>([]);
   const [series, setSeries] = useState<Series[]>([]);
 
   const [serie, setSerie] = useState<Serie[]>([]);
 
-  const [loading, setLoading] = useState(true);
+
 
   useEffect(()=>{
    
@@ -117,7 +118,7 @@ function HeroInfo() {
          </div>
     )
   }
-  if(serie.length !== 0){
+ 
   
  return (
   <div className='heroInfo'>
@@ -141,6 +142,6 @@ function HeroInfo() {
        </div>
   )
 }
-  }
+  
     
   export default HeroInfo
