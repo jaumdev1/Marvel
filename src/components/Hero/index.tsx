@@ -9,6 +9,21 @@ type Props =  {
 }
 
 function Hero(props:Props) {
+function SaveHero(){
+ const heroList = localStorage.getItem('heros')
+ let saveHeros:Array<Props> = JSON.parse(heroList || `[]`) || []
+ const hasHero = saveHeros.some((saveHero:Props)=> saveHero.id === props.id)
+
+if(hasHero){
+  alert('Você já tem esse herói em sua lista!');
+  return;
+}else{
+saveHeros.push({id:props.id, name:props.name, img: props.img})
+localStorage.setItem('heros', JSON.stringify(saveHeros))
+alert('O heroi foi salvo!')
+}
+}
+
 
 
     return (
@@ -20,9 +35,10 @@ function Hero(props:Props) {
          </div>
          </Link>
          <div className="contentLike">
-            <button className="buttonLike"> 
+            <button className="buttonLike" onClick={SaveHero}> 
               <VscHeart/> 
             </button>
+          
             </div>
       </div>
      
