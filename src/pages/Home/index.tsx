@@ -56,7 +56,7 @@ useEffect(()=>{
      const keyMd5 = 'd53442a0c3f85d6c21b9e5a9d1791c5d'
      const keyPublica = '64848faabd63b03da8406ef12859179f'
   
-     const response = await api.get(`characters?ts=${keyTimeStamp}&apikey=${keyPublica}&hash=${keyMd5}&nameStartsWith=${search}`)
+     const response = await api.get(`characters?ts=${keyTimeStamp}&apikey=${keyPublica}&hash=${keyMd5}&nameStartsWith=${search || RandomAlfa()}`)
      setHeros(response.data.data.results)
     }
 
