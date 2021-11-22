@@ -36,7 +36,11 @@ type Serie={
   }
 }
 
-
+type Props =  {
+  img:string;
+  name: string;
+  id: string;
+}
 function HeroInfo():JSX.Element {
 
   const{ id } = useParams<ParamTypes>();
@@ -45,6 +49,21 @@ function HeroInfo():JSX.Element {
 
   const [serie, setSerie] = useState<Serie[]>([]);
 
+
+  function SaveHero(){
+    const heroList = localStorage.getItem('heros')
+    let saveHeros:Array<Props> = JSON.parse(heroList || `[]`) || []
+    const hasHero = saveHeros.some((saveHero:Props)=> saveHero.id === hero[0].id)
+   
+   if(hasHero){
+     alert('Você já tem esse herói em sua lista!');
+     return;
+   }else{
+   saveHeros.push({id:hero[0].id, name:hero[0].name, img: (hero[0].thumbnail.path +'.'+ hero[0].thumbnail.extension)})
+   localStorage.setItem('heros', JSON.stringify(saveHeros))
+   alert('O heroi foi salvo!')
+   }
+   }
 
 
   useEffect(()=>{
@@ -130,7 +149,7 @@ function HeroInfo():JSX.Element {
     <p className="description">{hero[0].description}</p>
     
     <div className="like">
-       <button className="likeButton"> 
+       <button className="likeButton" onClick={SaveHero}> 
          <VscHeart/> 
        </button>
        </div>
