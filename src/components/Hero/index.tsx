@@ -12,7 +12,7 @@ function Hero(props:Props) {
 
 
     return (
-     <div className='hero'id={props.id} >
+     <div className='hero'id={props.id} key={props.id} >
        <Link className='containerhero' to={`/heroInfo/${props.id}`}>
          <div className='contentHero' id={props.id} >
          <img className='image' src={props.img} alt={props.name}/>

@@ -1,0 +1,19 @@
+.serie{
+    width: 250px;
+    height: 400px;
+}
+.containerSerie{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 400px;
+}
+.imageSerie{
+    width: 250px;
+    height: 350px;
+}
+.nameSerie{
+    text-align: center;
+ color:#ff2323;
+}

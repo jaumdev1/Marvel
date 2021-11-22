@@ -12,33 +12,6 @@ background: rgba($color: #fff, $alpha: 0.1);
     width: 100px;
     height: 50px;
 }
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 300px;
-}
-.inputSearch{
-    margin-left:15px;
-    border:0;
-    border-bottom:1px solid #555;  
-    background:transparent;
-    width:100%;
-    padding:8px 0 5px 0;
-    color:#fff;
-}
-.inputSearch:focus{
-    border:none;	
- outline:none;
- border-bottom:1px solid #ff3333;	
-}
-.iconSearch:hover{
- cursor: pointer;
- transform: scale(0.9);
- opacity: 0.5;
- color:#ff3333;
-}
 
 .iconHeart{
     
