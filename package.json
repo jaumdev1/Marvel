@@ -2,6 +2,7 @@
   "name": "filmes",
   "version": "0.0.0",
   "scripts": {
+    "start": "yarn dev"
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
