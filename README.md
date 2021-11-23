@@ -29,8 +29,8 @@ projeto em produção aqui: https://marvel-sand.vercel.app/
 
 # Começando 
 
-1- Faça o cadastro em https://developer.marvel.com/ e obtenha as chaves para requisição da api.
-2- Configure as Varíaveis de ambiente
+- 1- Faça o cadastro em https://developer.marvel.com/ e obtenha as chaves para requisição da api.
+- 2- Configure as Varíaveis de ambiente
 
 ## Instalando as dependências
 yarn
